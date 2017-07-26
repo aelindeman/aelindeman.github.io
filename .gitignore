@@ -1,0 +1,7 @@
+*.lock
+._*
+.bundle/
+.DS_Store
+.jekyll-metadata
+.sass-cache/
+_site/
