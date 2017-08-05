@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/aelindeman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://ael.me
+  * I am aelindeman (https://keybase.io/aelindeman) on keybase.
+  * I have a public key ASAAwMfnGrTTc3aycw3qQstusCXpFwdgCfTpEx_oDXhvtgo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101e187b52397da47046cec1a517459f4cd7f47432612f57d2ed29f03074a1dc08a0a",
+            "host": "keybase.io",
+            "kid": "012000c0c7e71ab4d37376b2730dea42cb6eb025e917076009f4e9131fe80d786fb60a",
+            "uid": "3e87c9d55205eb51f6aa700e6f59e819",
+            "username": "aelindeman"
+        },
+        "merkle_root": {
+            "ctime": 1498761143,
+            "hash": "ed04afc0f63b46fcc605ec47a3f96ec16410256ba2b6b6b5ad99f48df6abf431f0e1beab9c3695ae846399e665b025e2501520b441565d822ea26b95d479719a",
+            "hash_meta": "fbd48fc4e1bdc200ea764c70cfbcdec83328e576386eba9ef1446271e2d0608a",
+            "seqno": 1201545
+        },
+        "service": {
+            "hostname": "ael.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.24"
+    },
+    "ctime": 1498761202,
+    "expire_in": 504576000,
+    "prev": "647af6705dd677649a4354abc5ec872ad21357aa4379bf743d15c1ec71eee83f",
+    "seqno": 31,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgAMDH5xq003N2snMN6kLLbrAl6RcHYAn06RMf6A14b7YKp3BheWxvYWTFA0B7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxZTE4N2I1MjM5N2RhNDcwNDZjZWMxYTUxNzQ1OWY0Y2Q3ZjQ3NDMyNjEyZjU3ZDJlZDI5ZjAzMDc0YTFkYzA4YTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMDBjMGM3ZTcxYWI0ZDM3Mzc2YjI3MzBkZWE0MmNiNmViMDI1ZTkxNzA3NjAwOWY0ZTkxMzFmZTgwZDc4NmZiNjBhIiwidWlkIjoiM2U4N2M5ZDU1MjA1ZWI1MWY2YWE3MDBlNmY1OWU4MTkiLCJ1c2VybmFtZSI6ImFlbGluZGVtYW4ifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTg3NjExNDMsImhhc2giOiJlZDA0YWZjMGY2M2I0NmZjYzYwNWVjNDdhM2Y5NmVjMTY0MTAyNTZiYTJiNmI2YjVhZDk5ZjQ4ZGY2YWJmNDMxZjBlMWJlYWI5YzM2OTVhZTg0NjM5OWU2NjViMDI1ZTI1MDE1MjBiNDQxNTY1ZDgyMmVhMjZiOTVkNDc5NzE5YSIsImhhc2hfbWV0YSI6ImZiZDQ4ZmM0ZTFiZGMyMDBlYTc2NGM3MGNmYmNkZWM4MzMyOGU1NzYzODZlYmE5ZWYxNDQ2MjcxZTJkMDYwOGEiLCJzZXFubyI6MTIwMTU0NX0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJhZWwubWUiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjI0In0sImN0aW1lIjoxNDk4NzYxMjAyLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjY0N2FmNjcwNWRkNjc3NjQ5YTQzNTRhYmM1ZWM4NzJhZDIxMzU3YWE0Mzc5YmY3NDNkMTVjMWVjNzFlZWU4M2YiLCJzZXFubyI6MzEsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAGikfzYTYMVaBGeWQal1IhuhxfcAc/qY//iq+NhGn7rYVBzFddI80MqLbfHo/qC5iisen9Sr1831QDWDwbJcDD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOLRXHbajA6hQ65HUP2xkrgcwaXlMQc0uxUnSQLKYrm7o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aelindeman
+
+==================================================================

@@ -1,0 +1,21 @@
+<header>
+  <nav>
+    <section class="title">
+      <h1>Alex Lindeman</h1>
+    </section>
+    <section class="site">
+      <ul>
+        <li{% if page.section == 'portfolio' %} class="active"{% endif %}><a href="{% link index.html %}">Portfolio</a></li>
+        <li{% if page.section == 'journal' %} class="active"{% endif %}><a href="{% link journal/index.html %}">Journal</a></li>
+        <li><a href="https://careers.stackoverflow.com/aelindeman" target="_blank">CV</a></li>
+      </ul>
+    </section>
+    <section class="social">
+      <ul>
+        <li><a href="https://github.com/aelindeman" target="_blank">Github</a></li>
+        <li><a href="http://last.fm/user/alexlindeman" target="_blank">Last.fm</a></li>
+        <li><a href="https://steamcommunity.com/id/owlecks" target="_blank">Steam</a></li>
+      </ul>
+    </section>
+  </nav>
+</header>

@@ -1,0 +1,46 @@
+---
+title: Journal
+section: journal
+slug: journal
+---
+<h2 class="sr-only">Journal</h2>
+<section class="recent">
+  <header>
+    <h3>Recent entries</h3>
+  </header>
+  {% for post in site.posts limit: 6 %}
+    {% assign day_suf = post.date | date: "%-d" %}
+    {% case day_suf %}
+      {% when '1' or '21' or '31' %}{% assign day_suf = 'st' %}
+      {% when '2' or '22' %}{% assign day_suf = 'nd' %}
+      {% when '3' or '23' %}{% assign day_suf = 'rd' %}
+      {% else %}{% assign day_suf = 'th' %}
+    {% endcase %}
+  <article data-slug="{{ post.slug }}">
+    <header>
+      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+      <span class="date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d%%suf, %Y" | replace: "%suf", day_suf }}</time></span>
+    </header>
+    <p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+  </article>
+  {% endfor %}
+</section>
+
+{% comment %}
+{% for post in site.posts %}
+  {% assign year = post.date | date: "%Y" %}
+  {% if year != date %}
+    {% unless forloop.first %}</ul></section>{% endunless %}
+    {% assign date = year %}
+<section class="archive" data-year="{{ year }}">
+  <header>
+    <h2>{{ year }}</h2>
+  </header>
+  <ul>
+{% endif %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% if forloop.last %}</ul></section>{% endif %}
+{% endfor %}
+{% endcomment %}

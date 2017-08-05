@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% assign day_suf = page.date | date: "%-d" %}
+{% case day_suf %}
+  {% when '1' or '21' or '31' %}{% assign day_suf = 'st' %}
+  {% when '2' or '22' %}{% assign day_suf = 'nd' %}
+  {% when '3' or '23' %}{% assign day_suf = 'rd' %}
+  {% else %}{% assign day_suf = 'th' %}
+{% endcase %}
+<section class="post">
+  <header>
+    <h2>
+      <a href="{% link journal/index.html %}">Journal</a>
+      <span class="slash">/</span>
+      <strong>{{ page.title }}</strong>
+    </h2>
+    <aside>
+      <span class="date">
+        Posted on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d%%suf, %Y" | replace: "%suf", day_suf }}</time>
+      </span>
+      <span class="tags">
+        and tagged {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}
+      </span>
+    </aside>
+  </header>
+  <article>
+    {{ content }}
+  </article>
+</section>

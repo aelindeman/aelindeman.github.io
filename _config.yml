@@ -1,0 +1,28 @@
+title: Alex Lindeman
+description: >-
+  The personal web site of Alex Lindeman, a dev-ops engineer and
+  software developer from Washington, DC.
+
+permalink: /journal/:slug
+strict_front_matter: true
+show_dir_listing: false
+
+ignore:
+  - .bundle
+  - .gitignore
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: default
+  - scope:
+      type: 'posts'
+    values:
+      layout: journal
+      section: journal
