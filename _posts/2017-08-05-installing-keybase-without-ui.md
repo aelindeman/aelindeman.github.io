@@ -1,6 +1,6 @@
 ---
 title: Installing Keybase without the UI
-excerpt: >
+excerpt: >-
   An experiment liberating the Keybase command line from the packaged, Electron-based UI.
 tags:
   - keybase
@@ -20,14 +20,15 @@ mkdir keybase-package
 dpkg -x keybase_amd64.deb keybase-package/
 ```
 
-Then I simply installed `fuse` (a dependency to `kbfsfuse`) and copied the binaries it would have installed to `/usr/local/bin`.
+Then I simply installed `fuse` (a dependency to `kbfsfuse`) and copied the binaries the Keybase package would have installed to `/usr/local/bin`.
 
 ```shell
 sudo apt install fuse
+cd keybase-package/usr/bin/
 sudo cp keybase kbfsfuse kbnm /usr/local/bin/
 ```
 
-So at this point, you can run `keybase` at any point and it will work fine. The first time you call `keybase` you'll notice it fork a daemon process first. After the daemon is running you can also call `kbfsfuse ~/keybase` and it will mount the Keybase filesystem to your home folder.
+So at this point, you can run `keybase` and it will work fine. The first time you call `keybase` you'll notice it fork a daemon process first. After the daemon is running you can also call `kbfsfuse ~/keybase` and it will mount the Keybase filesystem to your home folder.
 
 ### Installing Keybase as a service
 
