@@ -16,6 +16,9 @@ ignore:
   - LICENSE
   - README.md
 
+plugins:
+  - jekyll-feed
+
 defaults:
   - scope:
       path: ''

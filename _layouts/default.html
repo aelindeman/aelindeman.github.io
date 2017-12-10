@@ -1,9 +1,9 @@
 ---
 ---
 <!doctype html>
-<html xmlns:og="http://ogp.me/ns#">
+<html lang="en" xmlns:og="http://ogp.me/ns#">
   <head>
-    <title>{% if page.section != 'portfolio' %}Alex Lindeman / {% endif %}{{ page.title }}</title>
+    <title>{% if page.section != 'portfolio' %}Alex Lindeman: {% endif %}{{ page.title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +12,8 @@
     <meta property="og:site_name" content="Alex Lindeman">
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/139387?v=3&amp;s=460">
-    {% if page.section == 'journal' and page.layout == 'journal' %}
-    <meta property="og:description" content="{{ page.excerpt }}">
-    {% else %}
-    <meta property="og:description" content="The personal web page of Alex Lindeman, a dev-ops engineer and sofware developer from Washington, D.C.">
-    {% endif %}
+    <meta property="og:description" content="{% if page.section == 'journal' and page.layout == 'journal' %}{{ page.excerpt }}{% else %}The personal web page of Alex Lindeman, a dev-ops &amp; software engineer from Washington, D.C.{% endif %}">
+    {% feed_meta %}
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600,600i|Source+Code+Pro:400,700">
     {% if page.section == 'journal' %}<link rel="stylesheet" type="text/css" href="{% link rouge.css %}">{% endif %}
