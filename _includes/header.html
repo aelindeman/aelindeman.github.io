@@ -6,7 +6,7 @@
     <section class="site">
       <ul>
         <li{% if page.section == 'portfolio' %} class="active"{% endif %}><a href="{% link index.html %}">Portfolio</a></li>
-        <li{% if page.section == 'journal' %} class="active"{% endif %}><a href="{% link journal/index.html %}">Journal</a></li>
+        {% comment %}<li{% if page.section == 'journal' %} class="active"{% endif %}><a href="{% link journal/index.html %}">Journal</a></li>{% endcomment %}
         <li><a href="https://careers.stackoverflow.com/aelindeman" target="_blank">CV</a></li>
       </ul>
     </section>

@@ -6,6 +6,7 @@ tags:
   - keybase
   - linux
   - electron
+published: false
 ---
 I use [Keybase][keybase] regularly at work to exchange API keys, certificates, and stuff with my coworkers. I use it at home too, to securely store and sync files I'd rather not put on Dropbox, like my [Keepass][keepass] keychain. And I like it a lot!
 
