@@ -10,94 +10,9 @@ slug: portfolio
 </section>
 <section class="portfolio">
   <h2 class="sr-only">Portfolio</h2>
-  <article>
-    <header>
-      <section class="info">
-        <h3>WMATA With You</h3>
-        <aside class="languages"><span class="js">JS</span></aside>
-        <ul class="links">
-          <li><a href="https://apps.getpebble.com/applications/5404f8e0ec33d19e2200008b" target="_blank">Pebble App Store</a></li>
-          <li><a href="https://github.com/aelindeman/wmata-with-you" target="_blank">Github</a></li>
-        </ul>
-      </section>
-    </header>
-    <section class="description">
-      <p>A Pebble smartwatch app for DC&rsquo;s Metrorail and Metrobus. Displays realtime bus and train schedules &amp; service advisories for stations near your physical location. Written with Pebble.js and the WMATA API.</p>
-    </section>
-  </article>
-  <article>
-    <header>
-      <section class="info">
-        <h3>Mobile Market Manager</h3>
-        <aside class="languages"><span class="objc">Obj-C</span></aside>
-        <ul class="links">
-          <li><a href="http://umw.edu/greatminds/2015/06/10/market-manager/" target="_blank">UMW &ldquo;Great Minds&rdquo; article</a></li>
-          <li><a href="https://github.com/aelindeman/tfm-mobile-market-manager" target="_blank">Github</a></li>
-        </ul>
-      </section>
-    </header>
-    <section class="description">
-      <p>A specialized iPad point-of-service application designed and developed for TheFarmersMarket.co. It replaces their error-prone old method of pen-and-paper transaction recordkeeping, and generates financial reports.</p>
-    </section>
-  </article>
-  <article>
-    <header>
-      <section class="info">
-        <h3>Ship</h3>
-        <aside class="languages"><span class="php">PHP</span></aside>
-        <ul class="links">
-          <li><a href="https://github.com/aelindeman/ship3" target="_blank">Github</a></li>
-        </ul>
-      </section>
-    </header>
-    <section class="description">
-      <p>Displays and graphs a bunch of system information for a computer on a web page, accessible from anywhere. Created with PHP, the Lumen framework, LESS, and JavaScript.</p>
-    </section>
-  </article>
-  <article>
-    <header>
-      <section class="info">
-        <h3>Castle</h3>
-        <aside class="languages"><span class="php">PHP</span><span class="sr-only">, </span><span class="js">JS</span></aside>
-        <ul class="links">
-          <li><a href="https://github.com/aelindeman/castle" target="_blank">Github</a></li>
-        </ul>
-      </section>
-    </header>
-    <section class="description">
-      <p>A platform for storing project information, credentials, and documentation for client and internal projects, as well as general discussion with a basic voting system. Written using Laravel 5 and JavaScript.</p>
-    </section>
-  </article>
-  <article>
-    <header>
-      <section class="info">
-        <h3>Suburban sprawl study</h3>
-        <aside class="languages"><span class="python">Python</span></aside>
-        <ul class="links">
-          <li><a href="https://aelindeman.github.io/virginia-sprawl-map" target="_blank">Interactive map</a></li>
-          <li><a href="https://www.dropbox.com/s/verzgfx5ghm3j95/351-Sprawl-AlexLindeman-ReportAndPoster.pdf" target="_blank">Poster</a></li>
-          <li><a href="https://github.com/aelindeman/virginia-sprawl-map" target="_blank">Github</a></li>
-        </ul>
-      </section>
-    </header>
-    <section class="description">
-      <p>Used publicly available data from USGS and the Census Bureau to locate suburban sprawl in Virginia counties and cities where population had drastically increased in the last 20 years. Created with ArcMap and arcpy.</p>
-    </section>
-  </article>
-  <article>
-    <header>
-      <section class="info">
-        <h3>Oakland Street Publishing</h3>
-        <aside class="languages"><span class="html">HTML</span></aside>
-        <ul class="links">
-          <li><a href="http://oaklandstreetpublishing.com" target="_blank">Website</a></li>
-        </ul>
-      </section>
-    </header>
-    <section class="description">
-      <p>Created an all-new corporate presence for Oakland Street Publishing, as the website and logo had hardly changed since 1998. Logo was made with Adobe Illustrator, and the website with vanilla HTML and CSS.</p>
-    </section>
-  </article>
+  {%- for entry in site.data.portfolio limit:6 -%}
+    {%- include portfolio.html entry=entry -%}
+  {%- endfor -%}
 </section>
 <section class="text">
   <p>Want to get in touch?</p>

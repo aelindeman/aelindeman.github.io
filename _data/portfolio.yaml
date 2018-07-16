@@ -1,0 +1,69 @@
+- title: WMATA With You
+  languages:
+    - js
+  links:
+    - text: Pebble App Store
+      url: https://apps.getpebble.com/applications/5404f8e0ec33d19e2200008b
+    - text: Github
+      url: https://github.com/aelindeman/wmata-with-you
+  description: >-
+    A Pebble smartwatch app for DC's Metrorail and Metrobus. Displays realtime
+    bus and train schedules & service advisories for stations near your
+    physical location. Written with Pebble.js and the WMATA API.
+- title: Mobile Market Manager
+  languages:
+    - objc
+  links:
+    - text: UMW "Great Minds" article
+      url: http://umw.edu/greatminds/2015/06/10/market-manager/
+    - text: Github
+      url: https://github.com/aelindeman/tfm-mobile-market-manager
+  description: >-
+    A specialized iPad point-of-service application designed and developed for
+    TheFarmersMarket.co. It replaces their error-prone old method of
+    pen-and-paper transaction recordkeeping, and generates financial reports.
+- title: Ship
+  languages:
+    - php
+  links:
+    - text: Github
+      url: https://github.com/aelindeman/ship3
+  description: >-
+    Displays and graphs a bunch of system information for a computer on a web
+    page, accessible from anywhere. Created with PHP, the Lumen framework,
+    LESS, and JavaScript.
+- title: Castle
+  languages:
+    - php
+    - js
+  links:
+    - text: Github
+      url: https://github.com/aelindeman/castle
+  description: >-
+    A platform for storing project information, credentials, and documentation
+    for client and internal projects, as well as general discussion with a
+    basic voting system. Written using Laravel 5 and JavaScript.
+- title: Suburban sprawl study
+  languages:
+    - python
+  links:
+    - text: Interactive map
+      url: https://aelindeman.github.io/virginia-sprawl-map
+    - text: Poster
+      url: https://www.dropbox.com/s/verzgfx5ghm3j95/351-Sprawl-AlexLindeman-ReportAndPoster.pdf
+    - text: Github
+      url: https://github.com/aelindeman/virginia-sprawl-map
+  description: >-
+    Used publicly available data from USGS and the Census Bureau to locate
+    suburban sprawl in Virginia counties and cities where population had
+    drastically increased in the last 20 years. Created with ArcMap and arcpy.
+- title: Oakland Street Publishing
+  languages:
+    - html
+  links:
+    - text: Website
+      url: http://oaklandstreetpublishing.com
+  description: >-
+    Created an all-new corporate presence for Oakland Street Publishing, as
+    the website and logo had hardly changed since 1998. Logo was made with
+    Adobe Illustrator, and the website with vanilla HTML and CSS.
