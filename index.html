@@ -10,9 +10,9 @@ slug: portfolio
 </section>
 <section class="portfolio">
   <h2 class="sr-only">Portfolio</h2>
-  {%- for entry in site.data.portfolio limit:6 -%}
-    {%- include portfolio.html entry=entry -%}
-  {%- endfor -%}
+  {%- for entry in site.data.portfolio limit:6 %}
+    {%- include portfolio.html entry=entry %}
+  {%- endfor %}
 </section>
 <section class="text">
   <p>Want to get in touch?</p>

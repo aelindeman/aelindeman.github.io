@@ -10,12 +10,14 @@
         <li><a href="https://careers.stackoverflow.com/aelindeman" target="_blank">CV</a></li>
       </ul>
     </section>
+    {%- if site.data.social %}
     <section class="social">
       <ul>
-        <li><a href="https://github.com/aelindeman" target="_blank">Github</a></li>
-        <li><a href="http://last.fm/user/alexlindeman" target="_blank">Last.fm</a></li>
-        <li><a href="https://steamcommunity.com/id/owlecks" target="_blank">Steam</a></li>
+        {%- for social in site.data.social %}
+        <li><a href="{{ social.url }}" target="_blank">{{ social.text }}</a></li>
+        {%- endfor %}
       </ul>
     </section>
+    {%- endif %}
   </nav>
 </header>
