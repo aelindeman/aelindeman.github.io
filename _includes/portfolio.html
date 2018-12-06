@@ -1,7 +1,7 @@
 <article>
   <header>
     <section class="info">
-      <h3>{{ include.entry.title }}</h3>
+      <h3>{{ include.entry.title | smartify }}</h3>
       {%- if include.entry.languages %}
       <aside class="languages">
         {%- assign uclangs = 'css,html,js,php' | split: ',' -%}
@@ -25,13 +25,13 @@
       {%- if include.entry.links %}
       <ul class="links">
       {%- for link in include.entry.links %}
-        <li><a href="{{ link.url }}" target="_blank">{{ link.text }}</a></li>
+        <li><a href="{{ link.url }}" target="_blank">{{ link.text | smartify }}</a></li>
       {%- endfor %}
       </ul>
       {%- endif %}
     </section>
   </header>
   <section class="description">
-    <p>{{ include.entry.description }}</p>
+    <p>{{ include.entry.description | markdownify | smartify }}</p>
   </section>
 </article>
