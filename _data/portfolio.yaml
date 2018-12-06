@@ -10,6 +10,7 @@
     A Pebble smartwatch app for DC's Metrorail and Metrobus. Displays realtime
     bus and train schedules & service advisories for stations near your
     physical location. Written with Pebble.js and the WMATA API.
+
 - title: Mobile Market Manager
   languages:
     - objc
@@ -22,16 +23,18 @@
     A specialized iPad point-of-service application designed and developed for
     TheFarmersMarket.co. It replaces their error-prone old method of
     pen-and-paper transaction recordkeeping, and generates financial reports.
-- title: Ship
+
+- title: namedns
   languages:
-    - php
+    - golang
   links:
     - text: Github
-      url: https://github.com/aelindeman/ship3
+      url: https://github.com/aelindeman/namedns
   description: >-
-    Displays and graphs a bunch of system information for a computer on a web
-    page, accessible from anywhere. Created with PHP, the Lumen framework,
-    LESS, and JavaScript.
+    A simple implementation of [goname](https://github.com/aelindeman/goname)
+    as an opinionated CLI tool, for easily managing DNS records on Name.com.
+    Also features testing and an automatic release process. Created with Go.
+
 - title: Castle
   languages:
     - php
@@ -43,6 +46,7 @@
     A platform for storing project information, credentials, and documentation
     for client and internal projects, as well as general discussion with a
     basic voting system. Written using Laravel 5 and JavaScript.
+
 - title: Suburban sprawl study
   languages:
     - python
@@ -57,6 +61,7 @@
     Used publicly available data from USGS and the Census Bureau to locate
     suburban sprawl in Virginia counties and cities where population had
     drastically increased in the last 20 years. Created with ArcMap and arcpy.
+
 - title: Oakland Street Publishing
   languages:
     - html
