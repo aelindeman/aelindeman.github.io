@@ -1,5 +1,3 @@
----
----
 <!doctype html>
 <html lang="en" xmlns:og="http://ogp.me/ns#">
   <head>
@@ -14,7 +12,7 @@
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/139387?v=3&amp;s=460">
     <meta property="og:description" content="{% if page.section == 'journal' and page.layout == 'journal' %}{{ page.excerpt }}{% else %}The personal web page of Alex Lindeman, a dev-ops &amp; software engineer from Washington, D.C.{% endif %}">
     {% feed_meta %}
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" type="text/css" integrity="sha384-gFTAvnQMdZ1wfeb9vay1SlC/c+jfgXz8qMUgAGRrTso3Q6f6J6qvcUOdYFuEP9cE" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600,600i|Source+Code+Pro:400,700">
     {% if page.section == 'journal' %}<link rel="stylesheet" type="text/css" href="{% link rouge.css %}">{% endif %}
     <link rel="stylesheet/less" type="text/css" href="{% link ruth.less %}">
@@ -25,7 +23,7 @@
     {{ content }}
     {% include footer.html %}
     </main>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/object-fit/0.4.3/polyfill.object-fit.min.js"></script>
+    <script type="text/javascript" integrity="sha384-kV2QjkT0ZQQmq2Muzo1/SgUKQl/DkHPXawPrHeGO5uiwvIxAzjgOJTBEFQOvUOUF" crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>
+    <script type="text/javascript" integrity="sha384-aiF66U5SW+s8Gu+LdVxqE0oMo9EBpd3zoutDdO+OPw4QNI1u296TXixj3ZnMSoV3" crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/object-fit/0.4.3/polyfill.object-fit.min.js"></script>
   </body>
 </html>
