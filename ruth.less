@@ -1,10 +1,6 @@
 // Colors and stuff
-@background: #e9e8e4;
-@foreground: #363533;
-
-// light on dark
-@alt-background: #363533;
-@alt-foreground: #e9e8e4;
+@background: if(@darkmode, #121617, #e9e8e4);
+@foreground: if(@darkmode, #e9e8e4, #121617);
 
 @link-color: #d22;
 @active-color: #607c8a;
@@ -57,8 +53,6 @@ pre, code {
 	font-weight: 400;
 }
 pre {
-	background: @alt-background;
-	color: @alt-foreground;
 	padding: 1em;
 	border-radius: 0.1875em;
 }
