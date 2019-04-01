@@ -86,40 +86,40 @@ main > header {
 		.container();
 		font-weight: 400;
 		text-align: center;
-	 	> section {
-	 		&.logo { display: none; }
+		> section {
+			&.logo { display: none; }
 			&.title {
 				display: block;
 				margin-bottom: (@height / 6);
 				h1 { padding-top: (@height / 4); }
 			}
-	 		&.social {
-	 			margin-top: (@height / 6);
-	 			padding-bottom: (@height / 6);
-	 			padding-top: (@height / 6);
-	 			position: relative;
-	 			&::after {
-	 				border-bottom: 1px solid @line;
-	 				content: '';
-	 				position: absolute;
-	 				top: 0;
-	 				left: 10%;
-	 				width: 80%;
-	 			}
-	 		}
-	 		@media (min-width: @screen-tablet) {
-	 			display: inline-block;
+			&.social {
+				margin-top: (@height / 6);
+				padding-bottom: (@height / 6);
+				padding-top: (@height / 6);
+				position: relative;
+				&::after {
+					border-bottom: 1px solid @line;
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 10%;
+					width: 80%;
+				}
+			}
+			@media (min-width: @screen-tablet) {
+				display: inline-block;
 				position: relative;
 				vertical-align: middle;
 				&.logo { display: inline-block; }
 				&.title h1 { line-height: 1; }
-	 			&.social {
-	 				margin-top: 0;
-	 				padding-top: 0;
-	 				padding-bottom: 0;
-	 				position: static;
-	 			}
-	 			&.social::after { content: none; }
+				&.social {
+					margin-top: 0;
+					padding-top: 0;
+					padding-bottom: 0;
+					position: static;
+				}
+				&.social::after { content: none; }
 				&.site { margin-right: 1rem; }
 			}
 			@media (min-width: @screen-desktop) {
