@@ -24,7 +24,7 @@
     {{ content }}
     {% include footer.html %}
     </main>
-    <script type="text/javascript">less={env:'production',globalVars:{darkmode:(function(){t=new Date().getHours();return (t<8&&t>20)||document.location.hash=='#dark'})()}}</script>
+    <script type="text/javascript">less={env:'production',globalVars:{darkmode:(function(){var t=new Date().getHours();return (t<8||t>=20)})()||document.location.hash=='#dark'}}</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" integrity="sha256-j93v7jDprdkNOGaRtTrZJ2h0VK6nJy29Qk3+zcHOv+0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit/0.4.3/polyfill.object-fit.min.js" integrity="sha256-5ypy0l3vMSXgIqUakE/IRrGiPdiG0mynNxYyAVZLYk4=" crossorigin="anonymous"></script>
   </body>
