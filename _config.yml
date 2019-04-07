@@ -1,11 +1,14 @@
 title: Alex Lindeman
 description: >-
-  The personal web site of Alex Lindeman, a dev-ops engineer and
-  software developer from Washington, DC.
+  The personal web site of Alex Lindeman,
+  a dev-ops and software engineer
+  from Washington, DC.
 
 permalink: /journal/:slug
 strict_front_matter: true
 show_dir_listing: false
+
+timezone: America/New_York
 
 ignore:
   - .bundle
@@ -16,8 +19,12 @@ ignore:
   - LICENSE
   - README.md
 
+exclude:
+  - journal
+
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 defaults:
   - scope:
