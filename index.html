@@ -8,7 +8,7 @@
   <meta property="og:title" content="Alex Lindeman" />
   <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://ael.me/" />
-  <meta property="og:image" content="" />
+  <meta property="og:image" content="https://ael.me/me.jpg" />
   <meta property="og:profile:first_name" content="Alex" />
   <meta property="og:profile:last_name" content="Lindeman" />
   <meta property="og:description"
@@ -45,10 +45,18 @@
       }
     }
 
+    img.logo {
+      border: 0.25em solid var(--foreground);
+      border-radius: 100%;
+      height: 5.5em;
+      width: 5.5em;
+    }
+
     h1 {
       font-size: 2.5em;
       font-weight: 700;
       margin-bottom: 0;
+      margin-top: 1rem;
     }
 
     h2 {
@@ -99,6 +107,7 @@
 
 <body>
   <header>
+    <img class="logo" src="me.jpg" alt="" />
     <h1>Alex Lindeman</h1>
     <p class="subheading">
       A cloud, devops, and full-stack software engineer, located in <span class="nobr">Washington, DC</span>.
@@ -107,7 +116,7 @@
   <section>
     <p>Currently at <a rel="nofollow" target="_blank" href="https://www.mux.com/">Mux</a>.</p>
     <p>
-      Previously a contributor at <span class="nobr">New Relic</span>,
+      Previously at <span class="nobr">New Relic</span>,
       <span class="nobr">VMWare</span>,
       <span class="nobr">Pivotal Labs</span>,
       <span class="nobr">USA Today</span>, and others.
