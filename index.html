@@ -28,6 +28,13 @@
       --accent: rgb(237, 97, 55);
     }
 
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: rgb(90, 82, 74);
+        --foreground: rgb(237, 224, 224);
+      }
+    }
+
     body {
       background-color: var(--background);
       color: var(--foreground);
@@ -36,13 +43,6 @@
       line-height: 1.25;
       margin: 5vh 5vw;
       max-width: 28em;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: var(--foreground);
-        color: var(--background);
-      }
     }
 
     img.logo {
