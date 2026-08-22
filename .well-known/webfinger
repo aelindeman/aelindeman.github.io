@@ -1,8 +1,8 @@
 {
-    "subject": "acct:webfinger@ael.me",
+    "subject": "acct:hello@ael.me",
     "links": [
         {
-            "href": "https://auth.app.ael.me/application/o/webfinger/",
+            "href": "https://auth.app.ael.me/application/o/tailscale/",
             "rel": "http://openid.net/specs/connect/1.0/issuer"
         }
     ]
